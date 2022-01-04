@@ -90,6 +90,7 @@ def run_page_main():
         st.header("")
 
         st.header("Activity Performance")
+        st.info("Click entry to view activity data.")
 
         df_display = df.copy().reset_index(drop=True)
         cols_float = [

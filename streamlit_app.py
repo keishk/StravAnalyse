@@ -11,10 +11,19 @@ setup_page(title)
 with st.sidebar:
     st.title(title)
     st.header("")
-    page = st.selectbox("Select page", ["Main", "Token Guide"])
+    page = st.selectbox("Select page", ["Main", "Login Guide"])
 
 if page == "Main":
     run_page_main()
 
-elif page == "Token Guide":
+elif page == "Login Guide":
     run_page_howto()
+
+with st.sidebar:
+    st.header("")
+    st.info(
+        """
+    ### :information_source: Note
+    - Changing devices can lead to different moving times/pace.
+    """
+    )

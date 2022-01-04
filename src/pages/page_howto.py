@@ -68,5 +68,3 @@ def run_page_howto():
     st.text("7. Use Client ID, Client Secret and Refresh Token to login.")
     st.subheader("")
     st.subheader("")
-
-    st.text("Note: Login data not stored.")
